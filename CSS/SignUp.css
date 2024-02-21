@@ -1,0 +1,79 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+form.SignUp{
+    text-align:center;
+}
+body{
+    background-color: rgb(236, 236, 236);
+}
+span.login_title{
+    font-family:'Times New Roman', Times, serif;
+    font-size: xx-large;
+    text-align:center;
+}
+div.SignUpDiv{
+    /* z-index: 10; */
+    background-color: white;
+    font-size:large;
+    font-weight: bold;
+    border: 5px solid #2f6d73;
+    border-radius: 5px;
+    /* margin: auto; */
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    box-shadow:5px 5px 5px 5px gray;
+    padding: 5%;      
+}
+input.email{
+    font-size: 14px;
+    padding: 10px;
+    outline: none;
+    width: 100%;
+    max-width: 200px;
+    border: 2px none none;
+    border-radius: 8px;
+}
+button.Verifybtn{ 
+    border: 2px solid #2f6d73;
+    border-radius: 3px;
+    padding: 2px;
+    height: 45px;
+    width: 80px;
+    cursor:pointer;
+    font-size: large;
+    font-weight:bold;
+    background-color: rgb(255, 255, 255);
+    font-family:'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+button.Verifybtn:hover{
+    background-color: cadetblue;
+}
+    
+label.SignUp_email{
+    width: 100%;
+}
+.Allready_Account{
+    margin-right: -80%;
+    font-size:small;
+    font-weight: 0;
+    font-weight: 100;
+    text-align: right;
+}  
+input.email:focus{
+    border: 2px solid #2f6d73;
+}
+@media (max-width: 640px) {
+    div.SignUpDiv{
+        border-radius: 5px;
+        margin-top: 5%;
+        margin-left: 15%;
+        margin-right: 15%;
+        padding: 5%;      
+    }
+
+}

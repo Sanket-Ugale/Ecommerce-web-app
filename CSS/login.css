@@ -1,0 +1,201 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#loader {
+    background-image: url("images\loader1.gif");
+      /* border: 12px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 12px solid #444444;
+      width: 70px;
+      height: 70px;
+      animation: spin 1s linear infinite; */
+  }
+form{
+    text-align:center;
+}
+/* body{
+    background-color: rgb(236, 236, 236);
+} */
+    span.login_title{
+        font-family:'Times New Roman', Times, serif;
+        font-size: xx-large;
+        text-align:center;
+    }
+    div.login{
+        /* z-index: 10; */
+        background-color: white;
+        font-size:large;
+        font-weight: bold;
+        border: 5px solid #2f6d73;
+        border-radius: 5px;
+        /* margin: auto; */
+        margin-top: 5%;
+        margin-left: 30%;
+        margin-right: 30%;
+        box-shadow:5px 5px 5px 5px gray;
+        padding: 1%;      
+    }
+    div.ForgetPassword{
+        background-color: white;
+        font-size:large;
+        font-weight: bold;
+        border: 5px solid #2f6d73;
+        border-radius: 5px;
+        /* margin: auto; */
+        margin-top: 5%;
+        margin-left: 25%;
+        margin-right: 25%;
+        box-shadow:5px 5px 5px 5px gray;
+        padding: 5%;      
+    }
+    input.username{
+        border: none;
+        border-bottom: 2px solid #1c1c1e;
+        margin-bottom: 10px;
+        padding: 7px 0;
+        font-size: 14px;
+        padding: 10px;
+        outline: none;
+        width: 100%;
+        max-width: 200px;
+    }
+    input.password{
+        border: none;
+        border-bottom: 2px solid #1c1c1e;
+        margin-bottom: 10px;
+        padding: 7px 0;
+        font-size: 14px;
+        padding: 10px;
+        outline: blue;
+        width: 100%;
+        max-width: 200px;
+    }
+    .showPassword{
+        font-size:small;
+        font-weight: 0;
+        font-weight: 100; 
+    }
+    button.login{
+        height: auto;
+        width: 100%;
+        border: 2px solid #0d87c0;
+        border-radius: 3px;
+        padding: 2px;
+        height: 40px;
+        width: 90px;
+        cursor:pointer;
+        font-size: large;
+        font-weight:bold;
+        background-color: rgb(255, 255, 255);
+        font-family:'Times New Roman', Times, serif;
+        box-sizing: border-box;
+    }
+    button.login:hover{
+        background-color: cadetblue;
+    }
+    span.login_password{
+        width: 100%;
+    }
+    label.login_username{
+        width: 100%;
+    }
+    /*  */
+    button.ForgetPassword{
+        height: auto;
+        width: 100%;
+        border: 2px solid #0d87c0;
+        border-radius: 3px;
+        padding: 2px;
+        height: 40px;
+        width: 90px;
+        text-align: center;
+        margin: auto;
+        cursor:pointer;
+        font-size: large;
+        font-weight:bold;
+        background-color: rgb(255, 255, 255);
+        font-family:'Times New Roman', Times, serif;
+        box-sizing: border-box;
+    }
+    button.ForgetPassword:hover{
+        background-color: cadetblue;
+    }
+    span.ForgetPassword_password{
+        width: 100%;
+    }
+    label.ForgetPassword_password{
+        width: 100%;
+        margin-left: -14%;
+    }
+    label.ForgetPassword_Confirmpassword{
+        width: 100%;
+    }
+    label.ForgetPassword_username{
+        width: 100%;
+        margin-left: -34%;
+    }
+    a.ForgetPassword{
+        font-size:15px;
+        text-decoration: none;
+        color: #2f6d73;
+        font-weight: bold;
+    }
+    /* Forget Password Inputs */
+    /* input.ForgetPassword_username{
+        font-size: 14px;
+        padding: 10px;
+        outline: none;
+        width: 100%;
+        max-width: 200px;
+        margin-left: 5%;
+    }
+    input.ForgetPassword_password{
+        font-size: 14px;
+        padding: 10px;
+        outline: none;
+        width: 100%;
+        max-width: 200px;
+        margin-left: 15%;
+    }
+    input.ForgetPassword_Confirmpassword{
+        font-size: 14px;
+        padding: 10px;
+        outline: none;
+        width: 100%;
+        max-width: 200px;
+        margin-left: 15%;
+    } */
+    
+    /*  */
+    .ForgetPassword{
+        margin-right: -30%;
+        font-size:small;
+        font-weight: 0;
+        font-weight: 100;
+        text-align: right;
+    }
+    input.Confirmpassword{
+        font-size: 14px;
+        padding: 10px;
+        outline: none;
+        width: 100%;
+        max-width: 200px;
+    }
+    /* div.login:hover{
+        border: 5px solid orangered;
+    } */
+    @media (max-width: 640px) {
+        div.login{
+            /* z-index: 10; */
+            font-size:large;
+            font-weight: bold;
+            /* margin: auto; */
+            margin-top: 5%;
+            margin-left: 15%;
+            margin-right: 15%;
+            box-shadow:5px 5px 5px 5px gray;
+            padding: 5%;      
+        }
+    }

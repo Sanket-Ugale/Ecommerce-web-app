@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+.TableBG{
+  overflow-x: auto;
+  width: 100%;
+}
+table {
+    font-family: 'Open Sans', sans-serif;
+    /* overflow-x: auto; */
+    /* float: right; */
+    /* overflow-x: auto; */
+    border: 2px solid gray;
+    border-collapse: collapse;
+    width: 100%;
+    color: white;
+    background-color:rgba(0, 0, 0, 0.3);
+  }
+  button.updateButton{
+      background-color: rgb(0, 104, 26);
+      border-radius: 5px;
+  }
+  th, td {
+    border: .5px solid rgb(255, 255, 255);
+    text-align: center;
+    padding: 8px;
+  }
+  .tableHead{
+    color: white;
+  }
+  
+  /* tr:nth-child(even) {background-color: #f2f2f2;} */
+  .UpdateButton{
+    border: none;
+    border-radius: 7px;
+    padding: 10px;
+    color: white;
+    background-size: cover;
+    text-decoration: none;
+    background-color: #039625;
+    cursor: pointer;
+}
+.DeleteButton{
+    border: none;
+    border-radius: 7px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: #ff7300;
+    cursor: pointer;
+}
+.DeleteButton:hover{
+    background-color: red;
+}
+.UpdateButton:hover{
+    background-color: rgb(0, 87, 0);
+}
+.AddProduct{
+  margin-right: 8px;
+  float: right;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+    text-decoration: none;
+    background-color: #00a2ff;
+    margin-bottom: 10px;
+}
+.ProductDetails{
+  color: white;
+  text-align: center;
+}
+.CheckAvailability{
+  border: none;
+  border-radius: 7px;
+  padding: 10px;
+  color: white;
+  background-size: cover;
+  text-decoration: none;
+  background-color: #1F51FF ;
+  cursor: pointer;
+}
+.CheckAvailability:hover{
+  background-color: rgb(17, 1, 153)
+}

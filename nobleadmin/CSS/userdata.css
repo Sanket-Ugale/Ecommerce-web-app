@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+.TableBG{
+  overflow-x: auto;
+  width: 100%;
+}
+table {
+    align-self: center;
+    /* float: right; */
+    border: 2px solid gray;
+    border-collapse: collapse;
+    width: 100%;
+    color: white;
+    background-color:rgba(0, 0, 0, 0.3);
+  }
+  button.updateButton{
+      background-color: red;
+      border-radius: 5px;
+  }
+  th, td {
+    border: .5px solid rgb(255, 255, 255);
+
+    text-align: center;
+    padding: 8px;
+  }
+  #logos{
+    color: rgb(0, 212, 202);
+    font-size: larger;
+  }
+  .UserDetails{
+    color: white;
+    text-align: center;
+  }
+  .HistoryButton{
+      cursor: pointer;
+    border: none;
+    color: #FFCA03;
+    background-color: transparent;
+    font-size: 40px;
+  }
+  /* tr:nth-child(even) {background-color: #f2f2f2; }
+  tr:nth-child(odd) {color: #f2f2f2;} */

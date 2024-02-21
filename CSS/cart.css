@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+.TableBG{
+  overflow-x: auto;
+  width: 100%;
+}
+table {
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+    color: rgb(0, 0, 0);
+    background-color:rgba(0, 0, 0, 0.3);
+  }
+  th, td {
+    text-align: center;
+  }
+  .tableHead{
+    color: rgb(255, 255, 255);
+  }
+  
+  /* tr:nth-child(even) {background-color: #f2f2f2;} */
+  .StatusConfirmed{
+      font-size: larger;
+      color: green;
+      padding: 10px;
+      text-align: center;
+      cursor: pointer;
+      /* background-color: gray; */
+  }
+  .StausNotConfirmed{
+    font-size:larger;
+    color: red;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .CartTitle{
+    color: white;
+    text-align: center;
+  }
+  .CartButtonBuy{
+      cursor: pointer;
+    border: none;
+    margin: 2px;
+    padding: 3px;
+    font-size: large;
+    color: rgb(0, 119, 255);
+    font-weight: bold
+  }
+  .CartButtonRemove{
+      cursor: pointer;
+    margin: 2px;
+    padding: 3px;
+    border: none;
+    background-color: transparent;
+    font-size: large;
+    color: rgb(0, 0, 0);
+    font-weight: bold
+    
+  }
+  .CartButtonBuy:hover{
+    margin: 0px;
+    padding: 5px;
+    font-size: large;
+    color: blue;
+    font-weight: bold
+  }
+  .CartButtonRemove:hover{
+    margin: 1.5px;
+    padding: 3px;
+    font-size:larger;
+
+  }
+  .Cart-Container{
+    margin: 1%;
+    width: 98%;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 25px 40px #00000033;
+   }
+   .emptyMsg{
+     text-align: center;
+     color: white;
+   }
+   .removeAll{
+       cursor: pointer;
+     font-size: larger; 
+     background: none;    
+     border: none;
+     font-weight: lighter;
+     color: rgb(255, 65, 65);
+     margin-left: 4%;
+   }
+   .selectAll{
+       cursor: pointer;
+     margin-right: 4%;
+     float: right;
+    font-size: larger; 
+    background: none;    
+    border: none;
+    font-weight: lighter;
+    color: rgb(0, 184, 0);
+    margin-left: 2%;
+    margin-top: -1.5%;
+  }
+  .QuantityButton{
+    font-size: large;
+    background: none;
+    border: none;
+  }
+  

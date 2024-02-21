@@ -1,0 +1,232 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+/* #loader {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  #loader:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 32px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-hourglass 1.2s infinite;
+  }
+  @keyframes lds-hourglass {
+    0% {
+      transform: rotate(0);
+      animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+      transform: rotate(900deg);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+      transform: rotate(1800deg);
+    }
+  }
+   */
+
+   #loader {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width:60px;
+    height:60px;
+    background:#554236;
+    display: grid;
+    transform-origin: top right;
+    animation: cl6-0 1s infinite linear;
+  }
+  #loader::before,
+  #loader::after {
+    content: "";
+    grid-area: 1/1;
+    background:#f77825;
+    transform-origin: inherit;
+    animation: inherit;
+    animation-name: cl6-1;
+  }
+  #loader::after {
+    background:#60B99A;
+    --s:180deg;
+  }
+  
+  @keyframes cl6-0 {
+    70%,
+    100%    {transform: rotate(360deg)}
+  }
+  
+  @keyframes cl6-1 {
+    30% {transform: rotate(var(--s,90deg))}
+    70% {transform: rotate(0)}
+  }
+/* .center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+} */
+body{
+    min-height: 100vh;
+    background-color: #212c3b;
+    margin-top: 110px;
+}
+header{
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    background: white;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    padding:0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+header .logo{
+    font-weight: bolder;
+    font-size: 35px;
+    color: #333;
+}
+header .navbar ul{
+list-style: none;
+}
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+header .navbar ul li a{
+    font-size: large;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background: cover;
+    color: #333;
+    display: block;
+}
+header .navbar ul li a:hover{
+    background:#333;
+    color:#fff;
+}
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 150px;
+    background:#fff;
+    display:none;
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+.login {
+    text-align: center;
+    background-color: #00adb5;
+    padding: 9px 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    border-bottom: none;
+}
+  
+.login:hover {
+    background-color: #047e85;
+    color: white;
+    border-bottom: none;
+}
+#menu-bar{
+    display: none;
+}
+header label{
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display:none;
+}
+@media(max-width:1600px){
+    .imageLogo{
+        height:50px; 
+        width:100%;
+      }
+}
+@media(max-width:1140px){
+    .login{
+        margin-right: 20%;
+   margin-left: 20%;
+   }
+    header{
+        padding: 20px;
+    }
+    header .logo{
+        font-size: 25px;
+    }
+    header label{
+        display: initial;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left:0; right:0;
+        background: #fff;
+        border-top: 1px solid rgba(0,0,0,.1);
+       display: none;
+    }
+
+    header .navbar ul li{
+        width: 100%;
+    }
+
+    header .navbar ul li ul{
+        position: relative;
+        width: 100;
+    }
+
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+   
+      
+}
+@media (max-width: 1200px) {
+    .imageLogo{
+      height:50px; 
+      width:100%;
+    }
+}
+@media (max-width: 360px) {
+    .imageLogo{
+        height:50px; 
+        width:85%;
+      }
+    }
+    div.footer{
+        padding : 7px;
+        z-index: 2;
+        color: white; 
+        text-align: center;
+    }
